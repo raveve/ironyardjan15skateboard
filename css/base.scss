@@ -1,0 +1,72 @@
+$base-color: #000000;
+$secondary-color: #FFFFFF;
+$accent-color: #EE1C25;
+$shadow-color: (grey);
+$main-font: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+$bolder-font: 'Arial Black', 'Helvetica Neue', Helvetica, sans-serif;
+
+@mixin link ($secondary-color: #FFFFFF) {
+  text-decoration: none;
+  color: $secondary-color;
+}
+
+/*******************************
+BODY
+********************************/
+
+body {
+  background-image: url("../images/bg.jpg");
+  background-image: no-repeat;
+  min-width: 100%;
+  font-family: $main-font;
+}
+
+header, section, footer {
+  max-width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+header {
+  a {
+    @include link();
+  }
+  li {
+    display: inline;
+  }
+}
+
+.photo-slider {
+  background-image: url("../images/bg.jpg");
+  background-image: no-repeat;
+  min-width: 100%;
+}
+
+.news-box {
+  div {
+    background-color: $secondary-color;
+  }
+  a {
+    @include link($accent-color);
+  }
+}
+
+.skateboarders-box {
+  a {
+    @include link();
+  }
+  h1 {
+    font-family: $bolder-font;
+  }
+}
+
+.board-design {
+  background-color: $secondary-color;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+footer {
+  background-color: $secondary-color;
+}

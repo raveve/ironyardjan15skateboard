@@ -1,0 +1,45 @@
+/*******************************
+BODY
+********************************/
+body {
+  background-image: url("../images/bg.jpg");
+  background-image: no-repeat;
+  min-width: 100%;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; }
+
+header, section, footer {
+  max-width: 60%;
+  margin-left: 20%;
+  margin-right: 20%; }
+
+header a {
+  text-decoration: none;
+  color: #FFFFFF; }
+header li {
+  display: inline; }
+
+.photo-slider {
+  background-image: url("../images/bg.jpg");
+  background-image: no-repeat;
+  min-width: 100%; }
+
+.news-box div {
+  background-color: #FFFFFF; }
+.news-box a {
+  text-decoration: none;
+  color: #EE1C25; }
+
+.skateboarders-box a {
+  text-decoration: none;
+  color: #FFFFFF; }
+.skateboarders-box h1 {
+  font-family: 'Arial Black', 'Helvetica Neue', Helvetica, sans-serif; }
+
+.board-design {
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px; }
+
+footer {
+  background-color: #FFFFFF; }
