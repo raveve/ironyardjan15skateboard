@@ -41,7 +41,7 @@ BODY
 body {
   background-image: url("../images/bg.jpg");
   background-image: no-repeat;
-  min-width: 100%;
+  min-height: 100%;
   font-family: $main-font;
 }
 
@@ -56,11 +56,61 @@ section {
 }
 
 header {
+  .social {
+    width: 100%;
+    margin-bottom: 25px;
+    padding-left: 45%;
+  }
+  .subscribe {
+    margin-right: 50px;
+  }
+  .social a {
+    text-align: center;
+  }
+  .dots {
+    font-size: 14px;
+    color: $secondary-color;
+    transform: rotate(90deg);
+  }
+  .fa {
+    width: 25px;
+    height: 30px;
+    @include shadow ();
+    font-size: 34px;
+    padding: 20px;
+  }
+  .fa-facebook {
+    background: rgba(70, 98, 158, .8);
+  }
+  .fa-facebook:hover {
+    background: rgba(70, 98, 158, 1);
+  }
+  .fa-rss {
+    background: rgba(243, 111, 36, .8);
+  }
+  .fa-rss:hover {
+    background: rgba(243, 111, 36, 1);
+  }
+  .fa-twitter {
+    background: rgba(85, 172, 238, .8);
+  }
+  .fa-twitter:hover {
+    background: rgba(85, 172, 238, 1);
+  }
+  .fa-youtube {
+    background: rgba(238, 28, 37, .8);
+  }
+  .fa-youtube:hover {
+    background: rgba(238, 28, 37, 1);
+  }
   div {
     margin-bottom: 25px;
   }
   nav {
     display: block;
+  }
+  .nav-1, .nav-2, .nav-3 {
+    margin-right: 0.25%;
   }
   a {
     @include link();
@@ -145,34 +195,44 @@ header {
 
 .lance {
   background-image: url("../images/sk8er-4.png");
+  background-size: 140%;
   background-image: no-repeat;
   border: 10px solid $secondary-color;
   max-width: 30%;
   @include shadow();
+  height: 200px;
 }
 
 .rodney {
   background-image: url("../images/sk8er-3.png");
+  background-size: 140%;
   background-image: no-repeat;
   border: 10px solid $secondary-color;
   max-width: 30%;
   @include shadow();
+  height: 200px;
 }
 
 .tommy {
   background-image: url("../images/sk8er-2.png");
+  background-size: 285%;
+  background-position: 80% 20%;
   background-image: no-repeat;
   border: 10px solid $secondary-color;
   max-width: 30%;
   @include shadow();
+  height: 410px;
 }
 
 .steve {
   background-image: url("../images/sk8er-1.png");
+  background-size: 115%;
+  background-position: 0 60%;
   background-image: no-repeat;
   border: 10px solid $secondary-color;
-  min-width: 60%;
+  min-width: 61%;
   @include shadow();
+  height: 200px;
 }
 
 .board-design {
@@ -202,6 +262,37 @@ footer {
   }
   a {
       @include link($light-color);
+  }
+  .fa {
+    width: 13px;
+    height: 15px;
+    @include shadow ();
+    font-size: 18px;
+    padding: 10px;
+  }
+  .fa-facebook {
+    background: rgba(35, 35, 35, .8);
+  }
+  .fa-facebook:hover {
+    background: rgba(70, 98, 158, 1);
+  }
+  .fa-rss {
+    background: rgba(35, 35, 35, .8);
+  }
+  .fa-rss:hover {
+    background: rgba(243, 111, 36, 1);
+  }
+  .fa-twitter {
+    background: rgba(35, 35, 35, .8);
+  }
+  .fa-twitter:hover {
+    background: rgba(85, 172, 238, 1);
+  }
+  .fa-youtube {
+    background: rgba(35, 35, 35, .8);
+  }
+  .fa-youtube:hover {
+    background: rgba(238, 28, 37, 1);
   }
   input, textarea {
     width: 80%;
