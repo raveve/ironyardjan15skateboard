@@ -16,15 +16,31 @@ header a {
   text-decoration: none;
   color: #FFFFFF; }
 header li {
-  display: inline; }
+  display: inline;
+  background-color: #EE1C25;
+  -webkit-box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.1);
+  padding: 10px; }
 
 .photo-slider {
-  background-image: url("../images/bg.jpg");
-  background-image: no-repeat;
-  min-width: 100%; }
+  background-image: url("../images/grid.png"), url("../images/top-image.png");
+  background-size: cover;
+  border: 10px solid #FFFFFF;
+  -webkit-box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.1); }
+  .photo-slider img {
+    padding: 40px 20px 40px 20px;
+    max-width: 35%; }
 
 .news-box div {
-  background-color: #FFFFFF; }
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  max-width: 30%; }
 .news-box a {
   text-decoration: none;
   color: #EE1C25; }
@@ -33,13 +49,63 @@ header li {
   text-decoration: none;
   color: #FFFFFF; }
 .skateboarders-box h1 {
-  font-family: 'Arial Black', 'Helvetica Neue', Helvetica, sans-serif; }
+  font-family: 'Arial Black', 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 32px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px; }
+.skateboarders-box div {
+  display: inline-block; }
+
+.lance {
+  background-image: url("../images/sk8er-4.png");
+  background-image: no-repeat;
+  border: 10px solid #FFFFFF;
+  max-width: 30%;
+  -webkit-box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.1); }
+
+.rodney {
+  background-image: url("../images/sk8er-3.png");
+  background-image: no-repeat;
+  border: 10px solid #FFFFFF;
+  max-width: 30%;
+  -webkit-box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.1); }
+
+.tommy {
+  background-image: url("../images/sk8er-2.png");
+  background-image: no-repeat;
+  border: 10px solid #FFFFFF;
+  max-width: 30%;
+  -webkit-box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.1); }
+
+.steve {
+  background-image: url("../images/sk8er-1.png");
+  background-image: no-repeat;
+  border: 10px solid #FFFFFF;
+  min-width: 60%;
+  -webkit-box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.1); }
 
 .board-design {
   background-color: #FFFFFF;
   display: flex;
   justify-content: space-between;
-  padding: 20px; }
+  padding: 20px;
+  -webkit-box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.1); }
 
 footer {
-  background-color: #FFFFFF; }
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.1); }
+  footer div {
+    max-width: 40%; }

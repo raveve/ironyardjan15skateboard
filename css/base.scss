@@ -1,7 +1,6 @@
 $base-color: #000000;
 $secondary-color: #FFFFFF;
 $accent-color: #EE1C25;
-$shadow-color: (grey);
 $main-font: Arial, 'Helvetica Neue', Helvetica, sans-serif;
 $bolder-font: 'Arial Black', 'Helvetica Neue', Helvetica, sans-serif;
 
@@ -9,6 +8,12 @@ $bolder-font: 'Arial Black', 'Helvetica Neue', Helvetica, sans-serif;
   text-decoration: none;
   color: $secondary-color;
 }
+
+@mixin shadow () {
+    -webkit-box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.1);
+  }
 
 /*******************************
 BODY
@@ -33,18 +38,29 @@ header {
   }
   li {
     display: inline;
+    background-color: $accent-color;
+    @include shadow();
+    padding: 10px;
   }
 }
 
 .photo-slider {
-  background-image: url("../images/bg.jpg");
-  background-image: no-repeat;
-  min-width: 100%;
+  background-image: url("../images/grid.png"), url("../images/top-image.png");
+  background-size: cover;
+  border: 10px solid $secondary-color;
+  @include shadow();
+  img {
+    padding: 40px 20px 40px 20px;
+    max-width: 35%;
+  }
 }
 
 .news-box {
   div {
     background-color: $secondary-color;
+    @include shadow();
+    display: inline-block;
+    max-width: 30%;
   }
   a {
     @include link($accent-color);
@@ -57,7 +73,46 @@ header {
   }
   h1 {
     font-family: $bolder-font;
+    font-size: 32px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
   }
+  div {
+    display: inline-block;
+  }
+}
+
+.lance {
+  background-image: url("../images/sk8er-4.png");
+  background-image: no-repeat;
+  border: 10px solid $secondary-color;
+  max-width: 30%;
+  @include shadow();
+}
+
+.rodney {
+  background-image: url("../images/sk8er-3.png");
+  background-image: no-repeat;
+  border: 10px solid $secondary-color;
+  max-width: 30%;
+  @include shadow();
+}
+
+.tommy {
+  background-image: url("../images/sk8er-2.png");
+  background-image: no-repeat;
+  border: 10px solid $secondary-color;
+  max-width: 30%;
+  @include shadow();
+}
+
+.steve {
+  background-image: url("../images/sk8er-1.png");
+  background-image: no-repeat;
+  border: 10px solid $secondary-color;
+  min-width: 60%;
+  @include shadow();
 }
 
 .board-design {
@@ -65,8 +120,14 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 20px;
+  @include shadow();
 }
 
 footer {
   background-color: $secondary-color;
+  @include shadow();
+  div {
+    max-width: 40%;
+  }
+
 }
