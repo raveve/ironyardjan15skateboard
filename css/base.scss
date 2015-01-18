@@ -1,5 +1,6 @@
 $base-color: #000000;
 $secondary-color: #FFFFFF;
+$light-color: #B2B2B2;
 $accent-color: #EE1C25;
 $main-font: Arial, 'Helvetica Neue', Helvetica, sans-serif;
 $bolder-font: 'Arial Black', 'Helvetica Neue', Helvetica, sans-serif;
@@ -14,6 +15,23 @@ $bolder-font: 'Arial Black', 'Helvetica Neue', Helvetica, sans-serif;
     -moz-box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.1);
     box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.1);
   }
+
+@mixin h2 () {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+@mixin h3 () {
+  font-size: 12px;
+  font-weight: 100;
+  color: $light-color;
+}
+
+@mixin p () {
+  font-size: 12px;
+  font-weight: 100;
+  line-height: 1.8em;
+}
 
 /*******************************
 BODY
@@ -32,7 +50,17 @@ header, section, footer {
   margin-right: 20%;
 }
 
+section {
+  margin-bottom: 50px;
+}
+
 header {
+  display: flex;
+  display: inline-block;
+  div {
+    justify-content: space-between;
+    margin-bottom: 25px;
+  }
   a {
     @include link();
   }
@@ -46,7 +74,8 @@ header {
 
 .photo-slider {
   background-image: url("../images/grid.png"), url("../images/top-image.png");
-  background-size: cover;
+  background-size: 110%, 130%;
+  background-position: 40% 28%;
   border: 10px solid $secondary-color;
   @include shadow();
   img {
@@ -56,14 +85,29 @@ header {
 }
 
 .news-box {
+  display: flex;
   div {
     background-color: $secondary-color;
     @include shadow();
-    display: inline-block;
-    max-width: 30%;
+    padding: 15px;
+    justify-content: space-between;
+    width: 30%;
+  }
+  .news-1, .news-2 {
+    margin-right: 1%;
+  }
+  h2 {
+    @include h2 ();
+  }
+  h3 {
+    @include h3 ();
+  }
+  p {
+    @include p ();
   }
   a {
     @include link($accent-color);
+    text-align: center;
   }
 }
 
@@ -126,8 +170,23 @@ header {
 footer {
   background-color: $secondary-color;
   @include shadow();
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
   div {
-    max-width: 40%;
+    width: 50%;
+    padding: 10px;
   }
-
+  h2 {
+    @include h2 ();
+  }
+  p {
+    @include p ();
+  }
+  input {
+    width: 80%;
+    color: $light-color;
+    border: 2px inset $light-color;
+    margin: 5px;
+  }
 }
