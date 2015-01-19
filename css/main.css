@@ -18,11 +18,14 @@ section {
 header .social {
   width: 100%;
   margin-bottom: 25px;
-  padding-left: 45%; }
+  padding-left: 40%; }
 header .subscribe {
   margin-right: 50px; }
+header .subscribe:hover {
+  color: #FFCB07; }
 header .social a {
-  text-align: center; }
+  text-align: center;
+  padding: 5px; }
 header .dots {
   font-size: 14px;
   color: #FFFFFF;
@@ -118,7 +121,7 @@ header li:hover {
     color: #EE1C25;
     text-align: center; }
   .news-box a:hover {
-    color: #B2B2B2; }
+    color: #FFCB07; }
 
 .skateboarders-box a {
   text-decoration: none;
@@ -131,54 +134,68 @@ header li:hover {
   padding: 20px; }
 .skateboarders-box div {
   display: inline-block; }
+.skateboarders-box .left-skateboarders {
+  width: 65%;
+  display: inline-block;
+  float: left;
+  margin-bottom: 50px; }
+.skateboarders-box .right-skateboarders {
+  width: 35%;
+  display: inline-block;
+  float: right;
+  margin-bottom: 50px; }
 
 .lance {
   background-image: url("../images/sk8er-4.png");
   background-size: 140%;
   background-image: no-repeat;
-  border: 10px solid #FFFFFF;
-  max-width: 30%;
+  border: 5px solid #FFFFFF;
+  width: 46%;
   -webkit-box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.1);
-  height: 200px; }
+  height: 175px;
+  margin-bottom: 10px;
+  margin-right: 10px; }
 
 .rodney {
   background-image: url("../images/sk8er-3.png");
   background-size: 140%;
   background-image: no-repeat;
-  border: 10px solid #FFFFFF;
-  max-width: 30%;
+  border: 5px solid #FFFFFF;
+  width: 46%;
   -webkit-box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.1);
-  height: 200px; }
-
-.tommy {
-  background-image: url("../images/sk8er-2.png");
-  background-size: 285%;
-  background-position: 80% 20%;
-  background-image: no-repeat;
-  border: 10px solid #FFFFFF;
-  max-width: 30%;
-  -webkit-box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.1);
-  box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.1);
-  height: 410px; }
+  height: 175px;
+  margin-bottom: 10px; }
 
 .steve {
   background-image: url("../images/sk8er-1.png");
   background-size: 115%;
   background-position: 0 60%;
   background-image: no-repeat;
-  border: 10px solid #FFFFFF;
-  min-width: 61%;
+  border: 5px solid #FFFFFF;
+  width: 97%;
   -webkit-box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.1);
-  height: 200px; }
+  height: 175px; }
+
+.tommy {
+  background-image: url("../images/sk8er-2.png");
+  background-size: 285%;
+  background-position: 80% 20%;
+  background-image: no-repeat;
+  border: 5px solid #FFFFFF;
+  width: 94%;
+  -webkit-box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.1);
+  height: 370px; }
 
 .board-design {
+  clear: both;
   background-color: #FFFFFF;
   display: flex;
   justify-content: space-between;
@@ -188,6 +205,7 @@ header li:hover {
   box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.1); }
 
 footer {
+  clear: both;
   background-color: #FFFFFF;
   -webkit-box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.1);

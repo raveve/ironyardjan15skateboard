@@ -59,13 +59,18 @@ header {
   .social {
     width: 100%;
     margin-bottom: 25px;
-    padding-left: 45%;
+    padding-left: 40%;
   }
   .subscribe {
     margin-right: 50px;
   }
+
+  .subscribe:hover {
+    color: $accent-highlight;
+  }
   .social a {
     text-align: center;
+    padding: 5px;
   }
   .dots {
     font-size: 14px;
@@ -173,7 +178,7 @@ header {
     text-align: center;
   }
   a:hover {
-    color: $light-color;
+    color: $accent-highlight;
   }
 }
 
@@ -191,37 +196,41 @@ header {
   div {
     display: inline-block;
   }
+  .left-skateboarders {
+    width: 65%;
+    display: inline-block;
+    float: left;
+    margin-bottom: 50px;
+  }
+  .right-skateboarders {
+    width: 35%;
+    display: inline-block;
+    float: right;
+    margin-bottom: 50px;
+  }
 }
 
 .lance {
   background-image: url("../images/sk8er-4.png");
   background-size: 140%;
   background-image: no-repeat;
-  border: 10px solid $secondary-color;
-  max-width: 30%;
+  border: 5px solid $secondary-color;
+  width: 46%;
   @include shadow();
-  height: 200px;
+  height: 175px;
+  margin-bottom: 10px;
+  margin-right: 10px;
 }
 
 .rodney {
   background-image: url("../images/sk8er-3.png");
   background-size: 140%;
   background-image: no-repeat;
-  border: 10px solid $secondary-color;
-  max-width: 30%;
+  border: 5px solid $secondary-color;
+  width: 46%;
   @include shadow();
-  height: 200px;
-}
-
-.tommy {
-  background-image: url("../images/sk8er-2.png");
-  background-size: 285%;
-  background-position: 80% 20%;
-  background-image: no-repeat;
-  border: 10px solid $secondary-color;
-  max-width: 30%;
-  @include shadow();
-  height: 410px;
+  height: 175px;
+  margin-bottom: 10px;
 }
 
 .steve {
@@ -229,13 +238,25 @@ header {
   background-size: 115%;
   background-position: 0 60%;
   background-image: no-repeat;
-  border: 10px solid $secondary-color;
-  min-width: 61%;
+  border: 5px solid $secondary-color;
+  width: 97%;
   @include shadow();
-  height: 200px;
+  height: 175px;
+}
+
+.tommy {
+  background-image: url("../images/sk8er-2.png");
+  background-size: 285%;
+  background-position: 80% 20%;
+  background-image: no-repeat;
+  border: 5px solid $secondary-color;
+  width: 94%;
+  @include shadow();
+  height: 370px;
 }
 
 .board-design {
+  clear: both;
   background-color: $secondary-color;
   display: flex;
   justify-content: space-between;
@@ -244,6 +265,7 @@ header {
 }
 
 footer {
+  clear: both;
   background-color: $secondary-color;
   @include shadow();
   margin-bottom: 100px;
