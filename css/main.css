@@ -2,7 +2,7 @@
 BODY
 ********************************/
 body {
-  background-image: url("../images/bg.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../images/bg.jpg");
   background-image: no-repeat;
   min-height: 100%;
   font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; }
@@ -29,7 +29,9 @@ header .social a {
 header .dots {
   font-size: 14px;
   color: #FFFFFF;
-  transform: rotate(90deg); }
+  -webkit-transform: rotateZ(-90deg);
+  -ms-transform: rotateZ(-90deg);
+  transform: rotateZ(-90deg); }
 header .fa {
   width: 25px;
   height: 30px;
@@ -39,19 +41,19 @@ header .fa {
   font-size: 34px;
   padding: 20px; }
 header .fa-facebook {
-  background: rgba(70, 98, 158, 0.8); }
+  background: rgba(70, 98, 158, 0.5); }
 header .fa-facebook:hover {
   background: #46629e; }
 header .fa-rss {
-  background: rgba(243, 111, 36, 0.8); }
+  background: rgba(243, 111, 36, 0.5); }
 header .fa-rss:hover {
   background: #f36f24; }
 header .fa-twitter {
-  background: rgba(85, 172, 238, 0.8); }
+  background: rgba(85, 172, 238, 0.5); }
 header .fa-twitter:hover {
   background: #55acee; }
 header .fa-youtube {
-  background: rgba(238, 28, 37, 0.8); }
+  background: rgba(238, 28, 37, 0.5); }
 header .fa-youtube:hover {
   background: #ee1c25; }
 header div {
@@ -114,7 +116,7 @@ header li:hover {
     color: #B2B2B2; }
   .news-box p {
     font-size: 12px;
-    font-weight: 100;
+    font-weight: 1;
     line-height: 2em; }
   .news-box a {
     text-decoration: none;
@@ -125,13 +127,16 @@ header li:hover {
 
 .skateboarders-box a {
   text-decoration: none;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  display: block;
+  margin-top: 18%; }
+.skateboarders-box a:hover {
+  color: #FFCB07; }
 .skateboarders-box h1 {
   font-family: 'Arial Black', 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 32px;
   margin: 0 auto;
-  text-align: center;
-  padding: 20px; }
+  text-align: center; }
 .skateboarders-box div {
   display: inline-block; }
 .skateboarders-box .left-skateboarders {
@@ -147,7 +152,8 @@ header li:hover {
 
 .lance {
   background-image: url("../images/sk8er-4.png");
-  background-size: 140%;
+  background-size: 125%;
+  background-position: 100% 0;
   background-image: no-repeat;
   border: 5px solid #FFFFFF;
   width: 46%;
@@ -160,7 +166,7 @@ header li:hover {
 
 .rodney {
   background-image: url("../images/sk8er-3.png");
-  background-size: 140%;
+  background-size: 125%;
   background-image: no-repeat;
   border: 5px solid #FFFFFF;
   width: 46%;
@@ -181,6 +187,8 @@ header li:hover {
   -moz-box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.1);
   height: 175px; }
+  .steve a {
+    margin-top: 12%; }
 
 .tommy {
   background-image: url("../images/sk8er-2.png");
@@ -193,6 +201,8 @@ header li:hover {
   -moz-box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.1);
   height: 370px; }
+  .tommy a {
+    margin-top: 50%; }
 
 .board-design {
   clear: both;
@@ -203,6 +213,12 @@ header li:hover {
   -webkit-box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.1); }
+  .board-design img:hover {
+    cursor: none;
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+    transition-duration: 1s; }
 
 footer {
   clear: both;
@@ -222,7 +238,7 @@ footer {
     font-weight: 300; }
   footer p {
     font-size: 12px;
-    font-weight: 100;
+    font-weight: 1;
     line-height: 2em; }
   footer a {
     text-decoration: none;

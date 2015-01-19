@@ -30,7 +30,7 @@ $bolder-font: 'Arial Black', 'Helvetica Neue', Helvetica, sans-serif;
 
 @mixin p () {
   font-size: 12px;
-  font-weight: 100;
+  font-weight: 1;
   line-height: 2em;
 }
 
@@ -39,7 +39,10 @@ BODY
 ********************************/
 
 body {
-  background-image: url("../images/bg.jpg");
+  background: linear-gradient(
+  rgba(0, 0, 0, .65),
+  rgba(0, 0, 0, .65)
+  ), url("../images/bg.jpg");
   background-image: no-repeat;
   min-height: 100%;
   font-family: $main-font;
@@ -75,7 +78,9 @@ header {
   .dots {
     font-size: 14px;
     color: $secondary-color;
-    transform: rotate(90deg);
+      -webkit-transform: rotateZ(-90deg);
+      -ms-transform: rotateZ(-90deg);
+      transform: rotateZ(-90deg);
   }
   .fa {
     width: 25px;
@@ -85,25 +90,25 @@ header {
     padding: 20px;
   }
   .fa-facebook {
-    background: rgba(70, 98, 158, .8);
+    background: rgba(70, 98, 158, .5);
   }
   .fa-facebook:hover {
     background: rgba(70, 98, 158, 1);
   }
   .fa-rss {
-    background: rgba(243, 111, 36, .8);
+    background: rgba(243, 111, 36, .5);
   }
   .fa-rss:hover {
     background: rgba(243, 111, 36, 1);
   }
   .fa-twitter {
-    background: rgba(85, 172, 238, .8);
+    background: rgba(85, 172, 238, .5);
   }
   .fa-twitter:hover {
     background: rgba(85, 172, 238, 1);
   }
   .fa-youtube {
-    background: rgba(238, 28, 37, .8);
+    background: rgba(238, 28, 37, .5);
   }
   .fa-youtube:hover {
     background: rgba(238, 28, 37, 1);
@@ -185,13 +190,17 @@ header {
 .skateboarders-box {
   a {
     @include link();
+    display: block;
+    margin-top: 18%;
+  }
+  a:hover {
+    color: $accent-highlight;
   }
   h1 {
     font-family: $bolder-font;
     font-size: 32px;
     margin: 0 auto;
     text-align: center;
-    padding: 20px;
   }
   div {
     display: inline-block;
@@ -212,7 +221,8 @@ header {
 
 .lance {
   background-image: url("../images/sk8er-4.png");
-  background-size: 140%;
+  background-size: 125%;
+  background-position: 100% 0;
   background-image: no-repeat;
   border: 5px solid $secondary-color;
   width: 46%;
@@ -224,7 +234,7 @@ header {
 
 .rodney {
   background-image: url("../images/sk8er-3.png");
-  background-size: 140%;
+  background-size: 125%;
   background-image: no-repeat;
   border: 5px solid $secondary-color;
   width: 46%;
@@ -242,6 +252,9 @@ header {
   width: 97%;
   @include shadow();
   height: 175px;
+  a {
+    margin-top: 12%;
+  }
 }
 
 .tommy {
@@ -253,6 +266,9 @@ header {
   width: 94%;
   @include shadow();
   height: 370px;
+  a {
+    margin-top: 50%;
+  }
 }
 
 .board-design {
@@ -262,6 +278,13 @@ header {
   justify-content: space-between;
   padding: 20px;
   @include shadow();
+  img:hover {
+    cursor: none;
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+    transition-duration: 1s;
+  }
 }
 
 footer {
