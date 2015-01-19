@@ -20,6 +20,7 @@ $bolder-font: 'Arial Black', 'Helvetica Neue', Helvetica, sans-serif;
 @mixin h2 () {
   font-size: 24px;
   font-weight: 300;
+  line-height: 1.2em;
 }
 
 @mixin h3 () {
@@ -48,7 +49,7 @@ body {
   font-family: $main-font;
 }
 
-header, section, footer {
+header, section, footer, .slider-dot {
   max-width: 60%;
   margin-left: 20%;
   margin-right: 20%;
@@ -153,6 +154,21 @@ header {
     padding: 40px 20px 40px 20px;
     max-width: 35%;
   }
+}
+
+.slider-section {
+  margin-bottom: 15px;
+}
+
+.slider-dot {
+  text-align: center;
+  color: $secondary-color;
+  font-size: 24px;
+  margin-bottom: 50px;
+}
+
+.slider-dot:hover {
+  color: $accent-highlight;
 }
 
 .news-box {
