@@ -67,8 +67,7 @@ header a {
   color: #FFFFFF;
   font-size: 14px; }
 header ul {
-  width: 100%;
-  padding: 0; }
+  width: 100%; }
 header li {
   display: inline-block;
   background-color: #EE1C25;
@@ -497,13 +496,17 @@ footer {
 @media screen and (min-width: 480px) and (max-width: 599px) {
   .large-nav {
     display: none; }
-  header .subscribe {
-    margin-right: 10px; }
+  .subscribe {
+    display: none; }
+  header {
+    width: 60%;
+    margin-left: 10%;
+    margin-right: 10%; }
   header .social {
-    padding-left: 4%;
+    display: flex;
     margin-bottom: 5px; }
   header .social a {
-    padding: 1px; }
+    justify-content: space-between; }
   header a {
     font-size: 7px; }
   header .fa {
